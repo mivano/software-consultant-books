@@ -6,12 +6,12 @@ repository               : "mivano/software-consultant-books"
 comments:
   provider               : "giscus" # false (default), "giscus", "custom"
   giscus:
-    repo_id              : "MDEwOlJlcG9zaXRvcnkxMjYwOTA2MDY="
+    repo_id              : "R_kgDOIk8VGQ="
     category_name        : "Announcements"
-    category_id          : "DIC_kwDOB4P9bs4B-Sid"
+    category_id          : "DIC_kwDOIk8VGc4CS9rY"
     discussion_term      : "og:title" # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
-    theme                : "dark" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 
 # Analytics
 analytics:
