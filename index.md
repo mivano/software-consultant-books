@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Search and Browse"
 ---
 
 <div class="container-fluid" style="margin-top: 50px;">
@@ -74,7 +74,7 @@ title: "Happy Jekylling!"
                             <li></li>
                         </ul>
                         <figcaption>
-                            <h1>{{ item.title }}</h1>
+                            <h1>{{ item.titleShort || item.title }}</h1>
                             <span>By {{ item.author }}</span>
                             <p>{{ item.excerpt }}</p>
                         </figcaption>

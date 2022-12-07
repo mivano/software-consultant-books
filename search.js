@@ -5,6 +5,7 @@ var documents = [
     {% for book in site.books %}
     {
     "title": "{{ book.title | escape }}",
+    "titleShort": "{{ book.titleShort | escape }}",
     "author": "{{ book.author | escape }}",
     "url": "{{ site.baseurl }}{{ book.url }}",
     "categories": "{{ book.categories | join: ', ' }}",

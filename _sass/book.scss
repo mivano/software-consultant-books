@@ -35,11 +35,13 @@ ul {
 .align {
 	clear: both;
 	width: 100%;
+	margin-top: 30px;
 	max-width: 1170px;
 	text-align: center;
 }
 
 .align > li {
+	overflow-y: clip;
 	width: 500px;
 	min-height: 300px;
 	display: inline-block;
@@ -48,11 +50,12 @@ ul {
 	vertical-align: top;
 }
 
-.valid-feedback {
-    width: 100%;
+.search-feedback {
+	width: 100%;
+    margin-left: 0.85rem;
     margin-top: 0.25rem;
     font-size: 0.875em;
-    color: lightgrey;
+    color: darkgray;
 }
 
 /* ///////////////////////////////////////////////////

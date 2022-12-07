@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  {% include header.html %}
-
+{% include header.html %}
 
 <body>
   {% include navbar.html %}
-  
   <section>
     <div id="el">
       {{ content }}
@@ -14,4 +12,5 @@
   {% include footer.html %}
   <script src="search.js"></script>
 </body>
+
 </html>
