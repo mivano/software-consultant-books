@@ -1,0 +1,8 @@
+{% if site.comments.provider and page.comments %}
+{% case site.comments.provider %}
+  {% when "giscus" %}
+    {% include /comments-providers/giscus.html %}
+  {% when "custom" %}
+    {% include /comments-providers/custom_scripts.html %}
+{% endcase %}
+{% endif %}

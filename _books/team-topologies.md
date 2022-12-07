@@ -2,7 +2,7 @@
 title: "Team Topologies: Organizing Business and Technology Teams for Fast Flow"
 titleShort: "Team Topologies"
 author: "Matthew Skelton, Manuel Pais"
-imageurl: /assets/covers/teamtopologies.jpg
+imageUrl: /assets/covers/teamtopologies.jpg
 category:
  - teams
  - agile

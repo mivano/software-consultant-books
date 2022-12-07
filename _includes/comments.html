@@ -1,0 +1,9 @@
+<div class="page__comments">
+    {% case site.comments.provider %}
+      {% when "giscus" %}
+        <h4 class="page__comments-title">Comments</h4>
+        <section id="giscus-comments"></section>
+      {% when "custom" %}
+        {% include /comments-providers/custom.html %}
+    {% endcase %}
+</div>

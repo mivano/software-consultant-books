@@ -1,16 +1,19 @@
+---
+---
+
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
 {% include header.html %}
 
 <body>
   {% include navbar.html %}
   <section>
-    <div id="el">
+    
       {{ content }}
-    </div>
+    
   </section>
-  {% include footer.html %}
-  <script src="search.js"></script>
+  {% include_cached footer.html %}
+  {% include scripts.html %}
 </body>
 
 </html>

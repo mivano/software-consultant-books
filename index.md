@@ -3,7 +3,7 @@ layout: default
 title: "Search and Browse"
 ---
 
-<div class="container-fluid" style="margin-top: 50px;">
+<div class="container-fluid" style="margin-top: 50px;" id="el">
 {% raw %}
    
     <div class="row">
@@ -11,9 +11,9 @@ title: "Search and Browse"
             <div v-for="facet in searchResult.data.aggregations">
                 <h4 style="margin-bottom: 5px;"><strong style="color: #337ab7;">{{ facet.title }}</strong></h4>
 
-                <ul class="browse-list list-unstyled long-list" style="margin-bottom: 0;">
+                <ul class="browse-list list-unstyled long-list" >
                     <li v-for="bucket in facet.buckets">
-                        <div class="checkbox block" style="margin-top: 0; margin-bottom: 0;">
+                        <div class="checkbox block">
                             <label>
                                 <!--<input class="checkbox" type="checkbox" v-on:click="updateFilters(facet.name, bucket.key)" v-model="filters[bucket.key]" value="{{ bucket.key }}" v-bind:value="isChecked2()">-->
                                 <!--<input class="checkbox" type="checkbox" v-on:click="updateFilters(facet.name, bucket.key)" v-model="filters[bucket.key]" v-bind:value="bucket.key">-->
@@ -46,7 +46,7 @@ title: "Search and Browse"
 
                         <ul class="hardcover_front">
                             <li>
-                                <img v-bind:src="item.imageurl" alt="" style="width: 100%;    height: 100%;" width="100%" height="100%" />
+                                <img v-bind:src="item.imageUrl" alt="" style="width: 100%;    height: 100%;" width="100%" height="100%" />
                             </li>
                             <li></li>
                         </ul>
@@ -89,3 +89,5 @@ title: "Search and Browse"
     </div>
     {% endraw %}
 </div>
+
+  <script src="search.js"></script>

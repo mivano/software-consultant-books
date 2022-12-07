@@ -12,7 +12,7 @@ var documents = [
     "tags": "{{ book.tags | join: ', ' }}",
     "audiences": "{{ book.audiences | join: ', ' }}",
     "date": "{{ book.date }}",
-    "imageurl": "{{ book.imageurl }}",
+    "imageUrl": "{{ book.imageUrl }}",
     "excerpt": "{{ book.excerpt | strip | strip_newlines | strip_html }}"
 } {% unless forloop.last %}, {% endunless %}
  {% endfor %}

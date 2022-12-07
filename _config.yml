@@ -1,6 +1,17 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 title: "The Software Consultants Library" # the name of your site, e.g. ACME Corp.
+repository               : "mivano/mindbyte.nl"
+
+comments:
+  provider               : "giscus" # false (default), "giscus", "custom"
+  giscus:
+    repo_id              : "MDEwOlJlcG9zaXRvcnkxMjYwOTA2MDY="
+    category_name        : "Announcements"
+    category_id          : "DIC_kwDOB4P9bs4B-Sid"
+    discussion_term      : "og:title" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
+    theme                : "dark" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 
 collections:
   books:
@@ -13,6 +24,7 @@ defaults:
       type: "books"
     values:
       layout: "book"
+      comments: true
   - scope:
       path: ""
       type: "posts"
@@ -26,3 +38,9 @@ defaults:
 sass:
     load_paths: 
         - _sass
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
