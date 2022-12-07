@@ -1,0 +1,28 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
+collections:
+  books:
+    output: true
+    permalink: /:collection/:name    
+
+defaults:
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+sass:
+    load_paths: 
+        - _sass
