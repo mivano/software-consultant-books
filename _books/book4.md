@@ -1,5 +1,6 @@
 ---
-title: "Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers " 
+title: "Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers"
+titleShort: "Gamestorming" 
 author: "Dave Gray, Sunni Brown, James Macanufo"
 audiences: 
   - leaders

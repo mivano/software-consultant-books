@@ -6,7 +6,7 @@ repository               : "mivano/software-consultant-books"
 comments:
   provider               : "giscus" # false (default), "giscus", "custom"
   giscus:
-    repo_id              : "R_kgDOIk8VGQ="
+    repo_id              : "R_kgDOIk8VGQ"
     category_name        : "Announcements"
     category_id          : "DIC_kwDOIk8VGc4CS9rY"
     discussion_term      : "og:title" # "pathname" (default), "url", "title", "og:title"
