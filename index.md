@@ -5,15 +5,11 @@ title: "Happy Jekylling!"
 
 <div class="container-fluid" style="margin-top: 50px;">
 {% raw %}
-    <h1>List of items ({{ searchResult.pagination.total }})</h1>
-
-    <p class="text-muted">Search performed in {{ searchResult.timings.search }} ms, facets in
-        {{ searchResult.timings.facets }} ms</p>
-
+   
     <div class="row">
         <div class="col-md-2 col-xs-2">
             <div v-for="facet in searchResult.data.aggregations">
-                <h5 style="margin-bottom: 5px;"><strong style="color: #337ab7;">{{ facet.title }}</strong></h5>
+                <h4 style="margin-bottom: 5px;"><strong style="color: #337ab7;">{{ facet.title }}</strong></h4>
 
                 <ul class="browse-list list-unstyled long-list" style="margin-bottom: 0;">
                     <li v-for="bucket in facet.buckets">
@@ -32,9 +28,15 @@ title: "Happy Jekylling!"
         </div>
 
         <div class="col-md-10 col-xs-10">
-            <div class="breadcrumbs"></div>
-            <div class="clearfix"></div>  
-            
+                     <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" v-model="query" class="form-control form-control-lg bg-white" placeholder="Type to search">
+            <div class="search-feedback">Found {{ searchResult.pagination.total }} books in {{ searchResult.timings.search }} ms. </div>
+          </div>
+        </form>
+
+         
+        
             <ul class="align">
             
                 <li v-for="item of searchResult.data.items" >
@@ -81,11 +83,9 @@ title: "Happy Jekylling!"
 
             </ul>
            
-            <div class="clearfix"></div>
         </div>
 
         <div class="clearfix" style="margin-bottom: 100px;"></div>
     </div>
     {% endraw %}
 </div>
-
