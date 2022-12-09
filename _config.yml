@@ -33,11 +33,6 @@ defaults:
       comments: true
   - scope:
       path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
     values:
       layout: "default"
 

@@ -7,7 +7,7 @@ var documents = [
     "title": "{{ book.title | escape }}",
     "titleShort": "{{ book.titleShort | escape }}",
     "author": "{{ book.author | escape }}",
-    "url": "{{ site.baseurl }}{{ book.url }}",
+    "url": "{{ book.url | relative_url }}",
     "categories": "{{ book.categories | join: ', ' }}",
     "tags": "{{ book.tags | join: ', ' }}",
     "audiences": "{{ book.audiences | join: ', ' }}",

@@ -8,23 +8,23 @@ title: "Search and Browse"
    
     <div class="row">
         <div class="col-md-2 col-xs-2">
-            <div v-for="facet in searchResult.data.aggregations">
-                <h4 style="margin-bottom: 5px;"><strong style="color: #337ab7;">{{ facet.title }}</strong></h4>
 
-                <ul class="browse-list list-unstyled long-list" >
-                    <li v-for="bucket in facet.buckets">
-                        <div class="checkbox block">
-                            <label>
-                                <!--<input class="checkbox" type="checkbox" v-on:click="updateFilters(facet.name, bucket.key)" v-model="filters[bucket.key]" value="{{ bucket.key }}" v-bind:value="isChecked2()">-->
-                                <!--<input class="checkbox" type="checkbox" v-on:click="updateFilters(facet.name, bucket.key)" v-model="filters[bucket.key]" v-bind:value="bucket.key">-->
-                                <input class="checkbox" type="checkbox" v-model="filters[facet.name]"
-                                    v-bind:value="bucket.key">
-                                {{ bucket.key }} ({{ bucket.doc_count }})
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+<section class="facet" v-for="facet in searchResult.data.aggregations">
+  <div class="facet-header">
+    <strong class="facet-title">{{ facet.title }}</strong>
+  </div>
+  <div class="facet-body" id="facetCheckboxes">
+    <ul class="facet-group">
+      <li class="facet-group-item"  v-for="bucket in facet.buckets">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" v-model="filters[facet.name]" v-bind:value="bucket.key">
+          {{ bucket.key }} ({{ bucket.doc_count }})
+        </label>
+      </li>
+    </ul>
+  </div>
+</section>
+
         </div>
 
         <div class="col-md-10 col-xs-10">
