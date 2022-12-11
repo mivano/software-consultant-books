@@ -3,12 +3,16 @@ title: "The Five Dysfunctions of a Team: A Leadership Fable"
 titleShort: "The Five Dysfunctions of a Team"
 author: "Patrick Lencioni"
 imageUrl: /assets/covers/fivedysfunctionsofateam.jpg
-category:
- - trust
-challenge:
- - trust 
-audiences:
- - managers
+tags:
+  - teams
+  - trust
+audiences: 
+  - leaders
+pillars:
+  - "Empowering Operating Model"
+topics:
+  - teams
+  - trust
 ---
 
 In The Five Dysfunctions of a Team Patrick Lencioni once again offers a leadership fable that is as enthralling and instructive as his first two best-selling books, The Five Temptations of a CEO and The Four Obsessions of an Extraordinary Executive. This time, he turns his keen intellect and storytelling power to the fascinating, complex world of teams.

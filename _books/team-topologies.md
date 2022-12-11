@@ -3,11 +3,14 @@ title: "Team Topologies: Organizing Business and Technology Teams for Fast Flow"
 titleShort: "Team Topologies"
 author: "Matthew Skelton, Manuel Pais"
 imageUrl: /assets/covers/teamtopologies.jpg
-category:
- - teams
- - agile
-audiences:
- - managers
+tags:
+  - teams
+audiences: 
+  - managers
+pillars:
+  - "Empowering Operating Model"
+topics:
+  - teams
 ---
 
 Effective software teams are essential for any organization to deliver value continuously and sustainably. But how do you build the best team organization for your specific goals, culture, and needs?

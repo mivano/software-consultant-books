@@ -1,9 +1,13 @@
 ---
 title: "Agile Retrospectives: Making Good Teams Great" 
 author: "Esther Derby, Diana Larsen"
+tags:
+  - teams
 audiences: 
-  - leaders
-categories:
+  - management
+pillars:
+  - "Empowering Operating Model"
+topics:
   - agile
 imageUrl: https://m.media-amazon.com/images/I/41zXLlhYEpL._SX218_BO1,204,203,200_QL40_ML2_.jpg
 ---

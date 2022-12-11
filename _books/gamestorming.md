@@ -2,10 +2,15 @@
 title: "Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers"
 titleShort: "Gamestorming" 
 author: "Dave Gray, Sunni Brown, James Macanufo"
+tags:
+  - teams
 audiences: 
   - leaders
-categories:
-  - agile
+pillars:
+  - "Epic Work Environment"
+  - "Empowering Operating Model"
+topics:
+  - teams
 imageUrl: https://m.media-amazon.com/images/I/41za7ux9y7S._SX379_BO1,204,203,200_.jpg
 ---
 

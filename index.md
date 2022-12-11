@@ -35,6 +35,17 @@ title: "Search and Browse"
           </div>
         </form>
 
+<div class="breadcrumbs" style="margin: 0 0 10px 0; " v-if="selected_filters.length">
+
+        <span v-for="filter in selected_filters" class="badge rounded-pill bg-primary" v-on:click="remove_filter(filter.facet, filter.name)" style="margin-right: 5px; cursor: pointer;">{{ filter.name }}
+          <span class="glyphicon glyphicon-remove"></span>
+        </span>
+
+        <span class="badge rounded-pill bg-danger float-end" v-on:click="reset()" style="cursor: pointer; margin-right: 0;">Clear filters
+          <span class="glyphicon glyphicon-remove"></span>
+        </span>
+
+      </div>
          
         
             <ul class="align">
@@ -46,7 +57,7 @@ title: "Search and Browse"
 
                         <ul class="hardcover_front">
                             <li>
-                                <img v-bind:src="item.imageUrl" alt="" style="width: 100%;    height: 100%;" width="100%" height="100%" />
+                                <img v-bind:src="item.imageUrl" alt="" style="width: 100%; height: 100%;" width="100%" height="100%" />
                             </li>
                             <li></li>
                         </ul>
@@ -86,6 +97,7 @@ title: "Search and Browse"
         </div>
 
         <div class="clearfix" style="margin-bottom: 100px;"></div>
+  
     </div>
     {% endraw %}
 </div>
