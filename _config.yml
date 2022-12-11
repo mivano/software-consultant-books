@@ -9,13 +9,13 @@ comments:
     repo_id              : "R_kgDOIk8VGQ"
     category_name        : "Announcements"
     category_id          : "DIC_kwDOIk8VGc4CS9rY"
-    discussion_term      : "og:title" # "pathname" (default), "url", "title", "og:title"
+    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
-    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : false #"google-gtag" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "" # Replace this with your ID, or delete
 

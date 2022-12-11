@@ -19,18 +19,25 @@ layout: default
                 <div class="">
                     <span class=""><strong>Topics:</strong> {{ page.topics | join: ', ' }}</span>
                 </div>
+                {% for tag in page.tags %}
+ <span class="badge bg-primary">
+    {{ tag | replace:'-', ' ' }}     
+</span>
+{% endfor %}
                 <p class="lead">
                     {{content}}
                 </p>
                 
             </div>
         </div>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-6">
+        <div class="row gx-4 gx-lg-5 mt-5">
+            <div class="col-md-12">
                 {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
                 {% include comments.html %}
-              ` {% endif %}
+                {% endif %}  
             </div>
         </div>
     </div>
 </section>
+
+
