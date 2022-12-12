@@ -6,7 +6,7 @@ imageUrl: /assets/covers/teamtopologies.jpg
 tags:
   - teams
 audiences: 
-  - managers
+  - management
 pillars:
   - "Empowering Operating Model"
 topics:

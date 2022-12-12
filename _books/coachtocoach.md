@@ -4,7 +4,7 @@ titleShort: "Coach to Coach"
 author: "Martin Rooney"
 imageUrl: /assets/covers/coachtocoach.jpg
 tags:
-  - inspire
+  - inspiring
   - coaching
 audiences: 
   - management
