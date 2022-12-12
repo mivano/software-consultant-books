@@ -29,62 +29,20 @@ layout: default
                 </p>
             </div>
         </div>
+        {% if page.show_related %}
         <div class="row gx-4 gx-lg-5 mt-5">
             <div class="col-md-12">
-                <h4>You may also enjoy</h4>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    
-                {% assign maxRelated = 4 %}
-                {% assign minCommonTags =  1 %}
-                {% assign maxRelatedCounter = 0 %}
-                
-                {% for book in site.books %}
-                
-                    {% assign sameTagCount = 0 %}
-                    {% assign commonTags = '' %}
-                
-                    {% for pillar in book.pillars %}
-                      {% if book.url != page.url %}
-                        {% if page.pillars contains pillar %}
-                          {% assign sameTagCount = sameTagCount | plus: 1 %}
-                          {% capture tagmarkup %} <span class="label label-default">{{ pillar }}</span> {% endcapture %}
-                          {% assign commonTags = commonTags | append: tagmarkup %}
-                        {% endif %}
-                      {% endif %}
-                    {% endfor %}
-                
-                    {% if sameTagCount >= minCommonTags %}
-                
-                    <div class="col">
-                      <div class="card">
-                        <img src="{{book.imageUrl | relative_url }}" class="card-img-top" alt="{{ book.title}}">
-                        <div class="card-body">
-                          <h5 class="card-title">{{ book.title }}</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
-                          <p class="card-text">{{ book.excerpt | truncatewords: 20 }}.</p>                        
-                        </div>
-                        <div class="card-footer">
-                            <a href="{{ book.url | relative_url }}" class="card-link">Read more</a>
-                        </div>
-                      </div>
-                    </div>
-                      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-                      {% if maxRelatedCounter >= maxRelated %}
-                        {% break %}
-                      {% endif %}
-                    {% endif %}
-                
-                  {% endfor %}
-                </div>
+             {% include related.html %}
             </div>
         </div>
+        {% endif %}
+        {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
         <div class="row gx-4 gx-lg-5 mt-5">
-            <div class="col-md-12">
-                {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
-                {% include comments.html %}
-                {% endif %}  
+            <div class="col-md-12">              
+                {% include comments.html %}                
             </div>
         </div>
+        {% endif %}  
     </div>
 </section>
 
