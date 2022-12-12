@@ -10,7 +10,7 @@ audiences:
   - management
   - leaders
 pillars:
-  - "Epic Work Environment"
+  - "Epic Workplace"
 topics:
   - Coaching
 ---

@@ -7,7 +7,7 @@ tags:
 audiences: 
   - leaders
 pillars:
-  - "Epic Work Environment"
+  - "Epic Workplace"
   - "Empowering Operating Model"
 topics:
   - teams
