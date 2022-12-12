@@ -4,7 +4,7 @@ titleShort: "Coach to Coach"
 author: "Martin Rooney"
 imageUrl: /assets/covers/coachtocoach.jpg
 tags:
-  - inspire
+  - inspiring
   - coaching
 audiences: 
   - management
@@ -12,7 +12,7 @@ audiences:
 pillars:
   - "Epic Workplace"
 topics:
-  - Coaching
+  - coaching
 ---
 
 Think about the coaches you've had throughout your life. Most likely, some were good, others not so good. Maybe one or two were great. One thing is undeniable: Coaches can influence your life in ways that can be negative or positive. A coach can either build you up or tear you down. The world needs better coaches in all walks of life--if you're a parent, a teacher, a co-worker, or a leader, you are also a coach. Which kind of coach do you want to be? Coach to Coach helps you answer this question and shares the secrets to bringing out the best in a person, both on and off the field.

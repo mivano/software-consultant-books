@@ -5,7 +5,7 @@ author: "Eliyahu M. Goldratt, Jeff Cox"
 imageUrl: /assets/covers/goal.jpg
 tags:
   - bottlenecks
-  - Llan
+  - lean
   - theory of constraints
   - model
 audiences: 
@@ -14,8 +14,8 @@ audiences:
 pillars:
   - "Empowering Operating Model"
 topics:
-  - Change Management
-  - Lean
+  - change Management
+  - lean
 ---
 
 The goal is a book about Lean manufacturing, that has a great resemblance with our software industry. Eliminating bottlenecks, reducing waste and making process more efficien by focussing on flow is all very applicable.
