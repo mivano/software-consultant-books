@@ -14,7 +14,7 @@ audiences:
 pillars:
   - "Empowering Operating Model"
 topics:
-  - change Management
+  - "change management"
   - lean
 ---
 
