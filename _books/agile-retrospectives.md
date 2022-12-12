@@ -1,5 +1,6 @@
 ---
 title: "Agile Retrospectives: Making Good Teams Great" 
+titleShort: "Agile Retrospectives"
 author: "Esther Derby, Diana Larsen"
 tags:
   - teams
