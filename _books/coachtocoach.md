@@ -1,5 +1,6 @@
 ---
 title: "Coach to Coach: An Empowering Story about How to Be a Great Leader" 
+titleShort: "Coach to Coach"
 author: "Martin Rooney"
 imageUrl: /assets/covers/coachtocoach.jpg
 tags:

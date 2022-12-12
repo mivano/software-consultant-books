@@ -1,5 +1,6 @@
 ---
 title: "ADKAR: A Model for Change in Business, Government and our Community" 
+titleShort: "ADKAR"
 author: "Jeffrey M. Hiatt"
 imageUrl: /assets/covers/adkar.jpg
 tags:

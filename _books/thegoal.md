@@ -1,5 +1,6 @@
 ---
 title: "The Goal: A Process of Ongoing Improvement" 
+titleShort: "The Goal"
 author: "Eliyahu M. Goldratt, Jeff Cox"
 imageUrl: /assets/covers/goal.jpg
 tags:
