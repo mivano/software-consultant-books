@@ -6,7 +6,7 @@ imageUrl: /assets/covers/goal.jpg
 tags:
   - bottlenecks
   - lean
-  - "theory of constraints"
+  - theory of constraints
   - model
 audiences: 
   - management
