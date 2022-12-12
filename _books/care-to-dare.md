@@ -7,7 +7,7 @@ tags:
   - model
   - change management
 audiences: 
-  - leaders
+  - leadership
 pillars:
   - "Empowering Operating Model"
 topics:
